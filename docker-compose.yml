@@ -1,0 +1,11 @@
+---
+version: "3.8"
+
+services:
+  demo-app:
+    environment: 
+      - APP_MODE=development
+      - NODE_ENV=development
+    build: .
+    ports:
+      - 8080:80
